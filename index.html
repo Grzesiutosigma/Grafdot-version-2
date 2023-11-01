@@ -1,377 +1,108 @@
-<html>
-   <head>
-        <title>Grafdot.com</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Grafdot"/>
-        <meta name="keywords" content="Grafdot"/>
-        <meta http-equiv="Content-Language" content="pl"/>
-        <meta http-equiv="Reply-to" content="mazurgrzegorz043@gmail.com">
-        <meta name="title" content="Grafdot">
-        <meta name="page-topic" content="Topic">
-        <meta name="creation_date" content="09.10.2023">
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Hamburger Menu Using HTML,CSS and JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
 
-        <link rel="website icon" type="png"
-        href="https://static.vecteezy.com/system/resources/thumbnails/003/653/832/small/g-alphabet-letter-logo-for-company-and-business-blue-pink-design-for-identity-vector.jpg"> 
-        
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Navbar Here -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <small id="navbar__logo">Thunder<span>Coding</span></small>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#home" class="navbar__links" id="home-page">Home</a></li>
+        <li class="navbar__item"><a href="#category" class="navbar__links" id="category-page">gallery</a></li>
+        <li class="navbar__item"><a href="#blog" class="navbar__links" id="about-page">blog</a></li>
+        <li class="navbar__item"><a href="#about" class="navbar__links" id="about-page">About</a></li>
+        <li class="navbar__item"><a href="#contact" class="navbar__links" id="about-page">Contact</a></li>
+      </ul>
+    </div>
 
-    </head>
-    <body>
-       
-        <nav class="navBar">
-            <div class="logo">
-                <i class="fa-solid fa-font-avasome"></i>
-                
-                <table>
-                    <tr>
-                       <td>
-                            <img src="https://static.vecteezy.com/system/resources/thumbnails/003/653/832/small/g-alphabet-letter-logo-for-company-and-business-blue-pink-design-for-identity-vector.jpg" height="80px" width="150px" alt="logo Grafdot">
-                        </td>
-                        <td>
-                            
-                            <div class="container">
-                                <div class="text">
-                                    <div class="neon-container">
-                                        <div class="neon-border">
-                                            <center>
-                                                <span>G</span>
-                                                <span>R</span>
-                                                <span>A</span>
-                                                <span>F</span>
-                                                <span>D</span>
-                                                <span>O</span>
-                                                <span>T</span>
-                                            </center>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            
-            <div class="menu">
-                <div class="menu-links">
-                    <nav id="sticky-menu">
-                        <ul> 
-                            <li>
-                                <a href="#">HOME</a>
-                                <a href="#">STORE</a>
-                                <a href="#">COMMUNITY</a>
-                                <a href="#">INFORMATIONS</a>
-                                <a href="#">SUPPORT</a>
-                            </li>
-                        </ul> 
-                    </nav>
-                </div>
-                    <button class="log-in"><a href="#">Log-in</a></button>
-                </div>
-                <div class="menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </nav>
+    <div class="toggle-btn">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox" class="toggle-label">
+        <span class="toggle-ball"></span>
+      </label>
+    </div>
+  </nav>
+  
+  <div class="main">
+    <h2>Thunder Coding...</h2>
+  </div>
+  <!-- -------------- footer -------------------- -->
 
-        <section>
-           
-            <div class="centered">
-                <div class="text-left">
-                    <p>#############################</p>
-                </div>
-                <div class="centered-image">
-                    <div class="slideshow-container">
-                        <div class="slide fade">
-                            <img src="https://images.gram.pl/news/nglu20230421102726852bkhx.jpg" alt="reklama Grafdot" class="centered-image">
-                        </div>
-                        <div class="slide fade">
-                            <img src="wiedzmin.avif" alt="Slide 2" class="centered-image">
-                        </div>
-                        <div class="slide fade">
-                            <img src="https://images.gram.pl/news/nglu20230421102726852bkhx.jpg" alt="reklama Grafdot" class="centered-image">
-                        </div>
-                        <div class="slide fade">
-                            <img src="wiedzmin.avif" alt="Slide 2" class="centered-image">
-                        </div>
-                        <div class="slide fade">
-                            <img src="https://images.gram.pl/news/nglu20230421102726852bkhx.jpg" alt="reklama Grafdot" class="centered-image">
-                        </div>
-                        <div class="slide fade">
-                            <img src="wiedzmin.avif" alt="Slide 2" class="centered-image">
-                        </div>
-                        <div class="slide fade">
-                            <img src="https://images.gram.pl/news/nglu20230421102726852bkhx.jpg" alt="reklama Grafdot" class="centered-image">
-                        </div>
-                        <div class="slide fade">
-                            <img src="wiedzmin.avif" alt="Slide 2" class="centered-image">
-                        </div>
-                        
-                    </div>
-                
-                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
-                
-                </div>
-                
-                <div class="text-right">
-                    <p>############################</p>
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios Mobile Phone.</p>
+                <div class="app-logo">
+                    <img src="./app-store.png" alt="">
+                    <img src="./play-store.png" alt="">
                 </div>
             </div>
+            <div class="col-6 footer-col-2">
+                <h3>thunder<span>coding</span></h3>
+                <ul>
+                  <li> My account </li>
+                  <li> Contact us</li>
+                  <li> All Products</li>
+              </ul>
             </div>
-                <center>
-                    <button class="button-down"><a href="#">NEW RELEASES</a></button>
-                    <button class="button-down"><a href="#">SPECIALS</a></button>
-                    <button class="button-down"><a href="#">FREE GAMES</a></button>
-                    <button class="button-down"><a href="#">BY USER TAGS</a></button>
-                </center>
+            <div class="col-6 footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li> Careers</li>
+                    <li> for Investors</li>
+                    <li> For Media</li>
+                    <li> Sustainbility</li>
+                    <li> Join Affiliates</li>
+                </ul>
             </div>
-            <h2 class="font-color">______________________________________________________________</h2>
-            <h2 class="font-color">Bestsellers</h2>
-            <div class="glowing-line"></div>
-            <div class="pricing-container">
-                <div class="pricing-card">
-                    <h2> The Witcher</h2>
-                    <p>100 PLN</p>
-                    <ul>
-                        <li> The Witcher III Premium Edition</li>
-                        <img src="wiedzmin.avif" height="150px" width="250px" id="Graphic Witcher">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
-                <div class="pricing-card">
-                    <h2>Cyberpunk</h2>
-                    <p>200 PLN</p>
-                    <ul>
-                        <li>Cyberpunk 2077 </li>
-                        <img src="cyberpunk.jfif" height="150px" width="250px" id="Graphic cyberpunk">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
-                <div class="pricing-card">
-                    <h2>GTA V</h2>
-                    <p>173 PLN</p>
-                    <ul>
-                        <li>Grand Theft Tuto V</li>
-                        <img src="GTA V.jpg" height="150px" width="250px" id="GTA V Graphic">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
-                <div class="pricing-card">
-                    <h2>Assassin Valhalla</h2>
-                    <p>250 PLN</p>
-                    <ul>
-                        <li>Assassin Creed Valhalla </li>
-                        <img src="valhalla.webp" height="150px" width="250px" id="Assassin Graphic">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
-            </div>
-            
-            <div class="glowing-line"></div>
-            <div class="pricing-container">
-                <div class="pricing-card">
-                    <h2>Need For Speed</h2>
-                    <p>290 PLN</p>
-                    <ul>
-                        <li>Need For Speed Heat</li>
-                        <img src="need for speed.webp" height="150px" width="250px" id="Graphic Need For Speed">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
-                <div class="pricing-card">
-                    <h2>Minecraft</h2>
-                    <p>200 PLN</p>
-                    <ul>
-                        <li>Minecraft </li>
-                        <img src="minecraft.webp" height="150px" width="250px" id="Graphic Minecraft">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
-                <div class="pricing-card">
-                    <h2>Forza Horizon 5</h2>
-                    <p>250 PLN</p>
-                    <ul>
-                        <li>Forza Horizon 5 Deluxe Edition</li>
-                        <img src="forza.webp" height="150px" width="250px" id="Forza Horizon 5 Graphic">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
-                <div class="pricing-card">
-                    <h2>Battlefield 2042</h2>
-                    <p>270 PLN</p>
-                    <ul>
-                        <li>Battlefield 2042 </li>
-                        <img src="Battlefield.jpg" height="150px" width="250px" id="Battlefield 2042 Graphic">
-                    </ul>
-                    <button class="select-button" data-plan="Premium">buy</button>
-                </div>
+            <div class="col-6 footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
             </div>
         </div>
-        <h2 class="font-color">______________________________________________________________</h2>
-        <h2 class="font-color">Best Free Games</h2>
-        <div class="glowing-line"></div>
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <h2> Fortnite</h2>
-                <p> 0 PLN </p>
-                <ul>
-                    <li>Fortnite (Epick Games)</li>
-                    <img src="fortnite.jpg" height="150px" width="250px" id="Graphic Fortnite">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-            <div class="pricing-card">
-                <h2>World of Tanks</h2>
-                <p>0 PLN</p>
-                <ul>
-                    <li>World of Tanks</li>
-                    <img src="wot.jpg" height="150px" width="250px" id="Graphic World of Tanks ">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Apex Legends</h2>
-                <p>0 PLN</p>
-                <ul>
-                    <li>Apex Legends</li>
-                    <img src="apex.jpg" height="150px" width="250px" id="Apex Legends Graphic">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-            <div class="pricing-card">
-                <h2>league of legends</h2>
-                <p>0 PLN</p>
-                <ul>
-                    <li>league of legends </li>
-                    <img src="lol.jfif" height="150px" width="250px" id="league of legends Graphic">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-        </div>
-        
-        <div class="glowing-line"></div>
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <h2>Rocet League</h2>
-                <p>0 PLN</p>
-                <ul>
-                    <li>Rocet League (Epick Games)</li>
-                    <img src="Rocet League.jpg" height="150px" width="250px" id="Graphic Rocet League">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Warframe</h2>
-                <p>0 PLN</p>
-                <ul>
-                    <li>Warframe </li>
-                    <img src="Warframe.jpg" height="150px" width="250px" id="Graphic Warframe">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Call of Duty: Warfare</h2>
-                <p>0 PLN</p>
-                <ul>
-                    <li>Call of Duty: Warfare</li>
-                    <img src="call od duty.jfif" height="150px" width="250px" id="Call of Duty: Warfare Graphic">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Lost Ark</h2>
-                <p>0 PLN</p>
-                <ul>
-                    <li>Lost Ark </li>
-                    <img src="ark.jpg" height="150px" width="250px" id="Lost Ark Graphic">
-                </ul>
-                <button class="select-button" data-plan="FREE">Select</button>
-            </div>
-        </div>
+        <hr>
+        <p class="copyright">copyright-reserved  @abhi shakya</p>
+    </div>
+</div>
 
-        <h2 class="font-color">______________________________________________________________</h2>
-        <h2 class="font-color">NEW RELEASES</h2>
-        <div class="glowing-line"></div>
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <h2>FC 24</h2>
-                <p> 319 PLN</p>
-                <ul>
-                    <li> EA- SPORT FC 24</li>
-                    <img src="fc 24.avif" height="150px" width="250px" id="NEW RELEASES GRAPHIC">
-                </ul>
-                <button class="select-button" data-plan="buy">buy</button>
-            </div>
-            <div class="pricing-card">
-                <h2>HOT WHEELS</h2>
-                <p>219 PLN</p>
-                <ul>
-                    <li>HOT WHEELS UNLEASHED™ 2  </li>
-                    <img src="hot wheels.jpg" height="150px" width="250px" id="NEW RELEASES GRAPHIC">
-                </ul>
-                <button class="select-button" data-plan="buy">buy</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Mortal Kombat 1</h2>
-                <p>314 PLN</p>
-                <ul>
-                    <li>Mortal Kombat 1</li>
-                    <img src="mortal kombat.jfif" height="150px" width="250px" id="NEW RELEASES GRAPHIC">
-                </ul>
-                <button class="select-button" data-plan="buy">buy</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Sons Of The Forest</h2>
-                <p> 140 PLN</p>
-                <ul>
-                    <li>Sons Of The Forest </li>
-                    <img src="the forest.webp" height="150px" width="250px" id="NEW RELEASES GRAPHIC">
-                </ul>
-                <button class="select-button" data-plan="buy">buy</button>
-            </div>
-        </div>
-           
-            
-        </section>
-
-        <footer>
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="https://static.vecteezy.com/system/resources/thumbnails/003/653/832/small/g-alphabet-letter-logo-for-company-and-business-blue-pink-design-for-identity-vector.jpg" height="80px" width="150px">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="copyright">
-                    <center>
-                        <p></p>
-                    </center>
-                </div>
-                <div class="footer-links">
-                   
-                    <ul>
-                        <div class="hdd">
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li> <h1><a href="https://www.facebook.com/grzegorz.mazur.100483"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" title="Grafdot-Facebook" height="40px" width="40px" alt="Fb"> </a> 
-                            <a href="https://www.instagram.com/thee_gq/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" title="Grafdot-Instagram" height="40px" width="40px" alt="IG"> </a>
-                            <a href="#"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/150px-Logo_of_Twitter.svg.png" title="Grafdot-Twitter" height="40px" width="40px" alt="Twitter"> </a>
-                            </h1></li>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-
-        </footer>
-        
-        
-    </body>
+<!-- partial -->
 
 
+<script>
+
+const toggle_Btn = document.querySelector('#checkbox');
+const navbarLinks = document.querySelectorAll('.navbar__links')
+
+toggle_Btn.addEventListener('change', () => {
+    if(toggle_Btn.checked){
+      for (const box of navbarLinks) {
+      box.style.color = '#000';
+      }
+      document.body.style.backgroundColor="#f5f5f5"
+      document.body.style.color="#000"
+    }else{
+      for (const box of navbarLinks) {
+      box.style.color = '#f5f5f5';
+      }
+      document.body.style.backgroundColor="#000"
+      document.body.style.color="#f5f5f5"
+    }
+
+    
+})
+</script>
+
+</body>
 </html>
